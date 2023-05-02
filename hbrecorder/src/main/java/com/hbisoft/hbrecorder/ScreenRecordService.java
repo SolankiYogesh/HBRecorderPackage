@@ -197,7 +197,7 @@ public class ScreenRecordService extends Service {
                 String channelName = "RecordChannel";
                 NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
                 if(manager.getNotificationChannel(channelName) != null) {
-                    manager.deleteNotificationChannel(channelName)
+                    manager.deleteNotificationChannel(channelName);
                 }
                 NotificationChannel channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_HIGH);
                 channel.setLightColor(Color.BLUE);
