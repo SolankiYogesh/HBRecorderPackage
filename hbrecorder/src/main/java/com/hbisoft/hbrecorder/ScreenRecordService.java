@@ -199,7 +199,7 @@ public class ScreenRecordService extends Service {
                 if(manager.getNotificationChannel(channelName) != null) {
                     manager.deleteNotificationChannel(channelName);
                 }
-                NotificationChannel channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_HIGH);
+                NotificationChannel channel = new NotificationChannel(channelId, channelName, NotificationManager.IMPORTANCE_LOW);
                 channel.setLightColor(Color.BLUE);
                 channel.setLockscreenVisibility(Notification.VISIBILITY_SECRET);
 
